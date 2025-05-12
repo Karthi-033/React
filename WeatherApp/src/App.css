@@ -1,145 +1,42 @@
 #root {
-  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
 .logo {
-  height: 34px;
- display: flex;
- justify-content: start;
-  width:40px;
-  padding-right: 200px;
-  margin-bottom: 1%;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
-h1{
-  background-color: white;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-#nowrap{
-  white-space: nowrap;
-  
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-#nav{
- 
-  background-color: #ffffff;
-  width: 100%;
-  justify-content: end;
-  padding-right: 7%;
+.card {
+  padding: 2em;
 }
 
 .read-the-docs {
-  color: #535151;
-}
-.error{
-  color:red;
-}
-
-.searchT{
-  margin-top: 2%;
- padding:10px;
- width: 38%;
-  align-self: center;
- border-radius: 50px;
- text-align: center;
- background-color: #eeeaeacf;
- color:black;
-}
-.bigfont{
-  font-size: 150px;
-   font-family: 'Flamenco';
-  font-style: normal;
-}
-#litefont{
-  font-size: 130px;
-  line-height: 60px;
-  color: #0000007d;
-  font-weight: 1;
-  margin-top: 10%;
-  
-}
-.icon{
-  width:280px;
-}
-#centerB{
-  width: 100%;
-}
-#firstG{
- text-align: left;
- margin-left: 10%;
-}
-#secG{
-  text-align: left;
-  
-}
-#litefont{
- text-align: left;
-}
-
-.centerBot{
-margin-left: 10%;
-}
-.content1{
-  background-color: #f3f0f068;
-  width: 100%;
-}
-body{
-height:auto;
-width: 100vw;
-}
-.slash{
-  width: 20px;
-  object-fit:fill;
-  height:200px;
-  transform: rotate(16deg);
-  margin-bottom: 80pX;
-}
-.slashDownFont{
-  font-size: 100px;
-   font-family: 'Flamenco';
-  font-weight: 100 ;
-  color:dimgray;
-}
-
-#HPSD{
-  margin-left: 15%;
-  margin-right: 25%;
-
-}
-#rightLine{
-  border-right: solid rgb(189, 185, 185);
-  border-right-width: 1px;
-  white-space:nowrap;
-  font-size: 26px;
-  font-family: 'Flamenco';
-  font-size: 30px; 
-  color: black;
-}
-
-.mention{
-  color:#5a5858;
-  font-family:'Flamenco';
-  font-weight: bolder;
-}
-
-.subTit{
-  margin-top: 7%;
-  font-size: 30px;
-  margin-bottom: 2%;
-}
-.card{
-
-  background-color: white;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 5%;
-}
-
-.static{
-  font-size:30px;
-}
-.CTemp{
- font-family:'Flamenco';
- font-size: 40px;
- font-weight: bolder;
+  color: #000000;
 }
