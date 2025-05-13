@@ -1,0 +1,168 @@
+.logo{
+    width:125px;
+    margin-left: 78%;
+}
+
+$fonts:"Raleway", sans-serif;
+
+.Search{
+   margin-left: 32%;
+    width:35%;
+    height:45px;
+    border-radius: 25px;
+    margin-top: 9%;
+    background-color: rgb(220, 218, 218);
+    border-top-color:rgb(255, 253, 253);
+    border-bottom-color:rgb(255, 253, 253);
+    border-right-color:rgb(255, 253, 253);
+    border-left-color:rgb(255, 253, 253);
+    text-align: center;
+    font-size:  20px;
+     font-family: $fonts ;
+     color:black;
+     
+
+}
+
+.Bg{
+     background-color: rgb(244, 242, 242);
+}
+
+.cityName{
+     font-size: 56px;
+     font-family: $fonts;
+     width:10ch;
+}
+.region{
+     font-size: 22px;
+     color: #666565;
+     text-transform: capitalize;
+}
+.date{
+     font-size:18px;
+     font-family: 'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif;
+     font-style: italic;
+}
+.currentTemp{
+     font-size: 15.5px;
+     color:#666565;
+     font-family:"Raleway", sans-serif;
+     font-style: italic;
+}
+
+.smallTemp{
+     font-size: 18px;
+     font-family:"Raleway", sans-serif ;
+}
+.slash{
+     height:150px;
+     width:10px;
+     transform: rotate(18deg);
+     margin-right: 3%;
+     margin-bottom:15%;
+}
+
+.bigF{
+    
+     font-size: 139px;
+     font-weight: 100;
+     font-family: 'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif;
+     align-self: self-end;
+}
+.smallF{
+     font-size: 70px;
+    font-weight: 100;
+     color:#666565;
+     font-family: 'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;
+     
+}
+#Display-1{
+    margin-left: 10%;
+}
+.WIcons{
+     width:200px;
+}
+.content{
+     margin-left: 31%;
+     margin-top: 4%;
+     font-size: 21px;
+     font-family:'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;
+}
+
+.l1{
+     font-size:18px;
+     font-family:'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;
+}
+.WIcons{
+     margin-left: 16%;
+}
+
+.wrap{
+     margin-left: 30%;
+     margin-right: 30%;
+     
+}
+
+.parameters1,.parameters2,.parameters3,.parameters4{
+     font-size: 30px;
+     font-family:'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;
+     font-weight: 500;
+     margin-left: 15%;
+     
+}
+.parameters1{
+     margin-left:35%;
+}
+.parameters2{
+     margin-left:25%;
+
+}
+.mention4{
+     font-size: 18px;
+     font-family: 'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;      
+     font-weight: 500;
+     color:#666565;
+     white-space:wrap;
+}
+.mention1,.mention2,.mention3{
+     font-size: 18px;
+     font-family: 'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif ;      
+     font-weight: 500;
+     color:#666565;
+     white-space:wrap;
+     margin-left: 25%;
+}
+.mention2{
+     margin-left: 15%;
+}
+#rightLine{
+    border-right:1px solid #d2d1d1;
+}
+.subTit{
+     margin-left: 45%;
+     font-size: 32px;
+     font-family:'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari', 'Open Sans', sans-serif  ;
+     font-weight: 300;
+     margin-top: 4%;
+     margin-bottom: 3%;
+}
+.static{
+     align-self: center;
+     padding-bottom: 30%;
+     font-size: 23px;
+     font-family: 'Open Sans', sans-serif  ;
+}
+.CTemp{
+     align-self: center;
+     padding-top: 10%;
+     font-size: 34px;
+     font-family:'Raleway', 'Tiro Devanagari Hindi', 'adobe-devanagari','Open Sans', sans-serif  ;
+}
+.card{
+width: 200px;
+
+}
+.img{
+     width: 100px;
+     align-self: center;
+}
