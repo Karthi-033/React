@@ -16,6 +16,7 @@ import { useSelector } from 'react-redux';
 function Dashboard() {
     const [iconPath, setIconPath] = useState("");
     const [content, setContent] = useState("");
+    const [days,setDays]=useState("");
     const [object, setObject] = useState({
         humidity: "",
         priciptation: "",
@@ -59,6 +60,7 @@ function Dashboard() {
 
 
     useEffect(() => {
+        if(!value || !value.current_condition || !value.weather) return;
 
         setWeather(
             {
@@ -95,7 +97,36 @@ function Dashboard() {
 
 
         const WIcon = weather.tempIcon;
+             const date=new Date();
+             const day = date.getDay();
+             console.log(day);
 
+             switch(day)
+             {
+                case 0:
+                        setDays("Sunday");
+                        break;
+                case 1:
+                        setDays("Monday");
+                        break;
+                case 2:
+                        setDays("Tuesday");
+                        break;
+                case 3:
+                        setDays("Wednesday");
+                        break;
+                case 4:
+                        setDays("Thursday");
+                        break;
+                case 5:
+                        setDays("Friday");
+                        break;
+                case 6:
+                        setDays("Saturday");
+                        break;
+
+
+             }
 
         if (WIcon == "Haze") {
             setIconPath(Haze);
@@ -120,7 +151,7 @@ function Dashboard() {
         }
 
 
-    }), [];
+    }, [value]);
 
 
 
@@ -131,7 +162,7 @@ function Dashboard() {
             <div className="row">
                 <div className="col" id="Display-1"><span className='l1'>Weather Forecast</span><div><span className='cityName'>{city}...</span></div>
                     <div> <span className='region'>{weather.region}, {weather.country}</span></div>
-                    <div><span className="date">{weather.time}, Tuesday</span></div>
+                    <div><span className="date">{weather.time}, {days}</span></div>
                     <div className="date"><span>{weather.currentDate}</span></div>
                     <div><span className="currentTemp">Current Weather is</span><span className='smallTemp'> {weather.temp}{'\u00B0'}C</span></div>
                 </div>
